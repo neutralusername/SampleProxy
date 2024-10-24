@@ -1,4 +1,4 @@
-package appProxy
+package proxyServer
 
 import (
 	"io"
@@ -8,8 +8,8 @@ import (
 	"github.com/neutralusername/systemge/httpServer"
 )
 
-func New() *httpServer.HTTPServer {
-	httpServer, err := httpServer.New(
+func New() (*httpServer.HTTPServer, error) {
+	return httpServer.New(
 		"httpServer",
 		&configs.HTTPServer{
 			TcpListenerConfig: &configs.TcpListener{
@@ -50,12 +50,4 @@ func New() *httpServer.HTTPServer {
 			},
 		},
 	)
-	if err != nil {
-		panic(err)
-	}
-	if err := httpServer.Start(); err != nil {
-		panic(err)
-	}
-
-	return httpServer
 }

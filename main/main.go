@@ -1,11 +1,17 @@
 package main
 
 import (
-	"SystemgeSampleProxy/appProxy"
+	"SystemgeSampleProxy/proxyServer"
 	"time"
 )
 
 func main() {
-	appProxy.New()
+	server, err := proxyServer.New()
+	if err != nil {
+		panic(err)
+	}
+	if err := server.Start(); err != nil {
+		panic(err)
+	}
 	<-make(<-chan time.Time)
 }
