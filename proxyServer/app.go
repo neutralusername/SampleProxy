@@ -13,8 +13,10 @@ func New() (*httpServer.HTTPServer, error) {
 		"httpServer",
 		&configs.HTTPServer{
 			TcpListenerConfig: &configs.TcpListener{
-				Port:   8080,
-				Domain: "localhost",
+				Port:        8080,
+				Domain:      "localhost",
+				TlsCertPath: "../main/MyCertificate.crt",
+				TlsKeyPath:  "../main/MyKey.key",
 			},
 		},
 		nil,
