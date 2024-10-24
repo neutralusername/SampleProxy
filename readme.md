@@ -16,4 +16,4 @@ deploy on server with access to the desired url and contact via https such as
 https://*your ip*:8080/?url=https://www.google.com
 ```
 
-browser extensions exist that can redirect all urls to "localhost:8080/?url=...." 
+browser extensions exist that can redirect all urls to "https://*your ip*:8080/?url=...." 
