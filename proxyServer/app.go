@@ -28,7 +28,6 @@ func New() (*httpServer.HTTPServer, error) {
 				// get response from this url
 				response, err := http.Get(url)
 				if err != nil {
-					println(err.Error(), url)
 					http.Error(w, "Failed to fetch URL", http.StatusBadRequest)
 					return
 				}
