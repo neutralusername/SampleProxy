@@ -10,4 +10,4 @@ and receive the desired pages' content back as http response
 
 browser extensions exist that can redirect all urls to "localhost:8080/?url=...." 
 
-configure https if usage goes beyond testing
+deploy on server with access to the desired url and contact via https
