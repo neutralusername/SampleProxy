@@ -8,12 +8,7 @@ import (
 	"github.com/neutralusername/systemge/httpServer"
 )
 
-type AppWebsocketHTTP struct {
-}
-
-func New() *AppWebsocketHTTP {
-
-	app := &AppWebsocketHTTP{}
+func New() *httpServer.HTTPServer {
 
 	httpServer, err := httpServer.New(
 		"httpServer",
@@ -63,5 +58,5 @@ func New() *AppWebsocketHTTP {
 		panic(err)
 	}
 
-	return app
+	return httpServer
 }
