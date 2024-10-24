@@ -8,6 +8,6 @@ localhost:8080/?url=https://www.google.com
 
 and receive the desired pages' content back as http response
 
-browser extensions exist that can redirect all urls to "localhost:8080/?url=" 
+browser extensions exist that can redirect all urls to "localhost:8080/?url=...." 
 
 configure https if usage goes beyond testing
