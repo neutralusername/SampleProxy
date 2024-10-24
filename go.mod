@@ -1,4 +1,4 @@
-module SystemgeSampleProxy
+module SystemgeSampleProxyServer
 
 go 1.23
 

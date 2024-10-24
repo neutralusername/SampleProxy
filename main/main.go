@@ -1,7 +1,7 @@
 package main
 
 import (
-	"SystemgeSampleProxy/proxyServer"
+	"SystemgeSampleProxyServer/proxyServer"
 	"time"
 )
 
