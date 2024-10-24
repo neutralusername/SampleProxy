@@ -6,4 +6,4 @@ clients visit the proxy servers' url (default configuration: localhost:8080) in 
 localhost:8080/?url=https://www.google.com
 ```
 
-and receive the desired page content back as http response
+and receive the desired pages' content back as http response
