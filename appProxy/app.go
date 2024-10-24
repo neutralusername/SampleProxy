@@ -9,7 +9,6 @@ import (
 )
 
 func New() *httpServer.HTTPServer {
-
 	httpServer, err := httpServer.New(
 		"httpServer",
 		&configs.HTTPServer{
