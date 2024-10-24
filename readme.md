@@ -10,4 +10,8 @@ and receive the desired pages' content back as http response
 
 browser extensions exist that can redirect all urls to "localhost:8080/?url=...." 
 
-deploy on server with access to the desired url and contact via https
+deploy on server with access to the desired url and contact via https such as
+
+```
+https://255.255.255.255:8080/?url=https://www.google.com
+```
